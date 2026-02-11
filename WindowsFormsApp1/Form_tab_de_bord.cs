@@ -16,5 +16,20 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void Form_tab_de_bord_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ajouterRetirerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

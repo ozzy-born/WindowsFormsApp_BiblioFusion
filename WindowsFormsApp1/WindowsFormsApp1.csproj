@@ -46,17 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Form_ajouter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form_ajouter.Designer.cs">
+      <DependentUpon>Form_ajouter.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_connexion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_connexion.Designer.cs">
       <DependentUpon>Form_connexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_retirer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_retirer.Designer.cs">
+      <DependentUpon>Form_retirer.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_stat.cs">
       <SubType>Form</SubType>
@@ -78,11 +84,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Form_ajouter.resx">
+      <DependentUpon>Form_ajouter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_connexion.resx">
       <DependentUpon>Form_connexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_retirer.resx">
+      <DependentUpon>Form_retirer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_stat.resx">
       <DependentUpon>Form_stat.cs</DependentUpon>

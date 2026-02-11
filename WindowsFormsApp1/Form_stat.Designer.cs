@@ -44,10 +44,6 @@
             this.adhérentToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.livreToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.jeuToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajouterRetirerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.livreToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.adhérentToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.jeuToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.statistiquesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreDemprunteursPasAnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empruntsParCatégorieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,6 +51,14 @@
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterSupprimerUneCatégorieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.connexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajouterRetirerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.livreToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.adhérentToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.jeuToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +68,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Title.AutoSize = true;
             this.Title.Font = new System.Drawing.Font("Impact", 25F);
-            this.Title.Location = new System.Drawing.Point(401, 229);
+            this.Title.Location = new System.Drawing.Point(400, 50);
             this.Title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Title.Name = "Title";
             this.Title.Size = new System.Drawing.Size(191, 42);
@@ -77,6 +81,7 @@
             this.tableauDeBordToolStripMenuItem,
             this.rechercherToolStripMenuItem,
             this.scannerToolStripMenuItem,
+            this.toolStripMenuItem1,
             this.ajouterRetirerToolStripMenuItem,
             this.statistiquesToolStripMenuItem,
             this.optionsToolStripMenuItem,
@@ -84,7 +89,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 5, 0, 5);
-            this.menuStrip1.Size = new System.Drawing.Size(800, 35);
+            this.menuStrip1.Size = new System.Drawing.Size(1008, 35);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -190,35 +195,6 @@
             this.jeuToolStripMenuItem3.Size = new System.Drawing.Size(144, 26);
             this.jeuToolStripMenuItem3.Text = "Jeu";
             // 
-            // ajouterRetirerToolStripMenuItem
-            // 
-            this.ajouterRetirerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.livreToolStripMenuItem2,
-            this.adhérentToolStripMenuItem2,
-            this.jeuToolStripMenuItem1});
-            this.ajouterRetirerToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.ajouterRetirerToolStripMenuItem.Name = "ajouterRetirerToolStripMenuItem";
-            this.ajouterRetirerToolStripMenuItem.Size = new System.Drawing.Size(134, 25);
-            this.ajouterRetirerToolStripMenuItem.Text = "Ajouter / Retirer";
-            // 
-            // livreToolStripMenuItem2
-            // 
-            this.livreToolStripMenuItem2.Name = "livreToolStripMenuItem2";
-            this.livreToolStripMenuItem2.Size = new System.Drawing.Size(144, 26);
-            this.livreToolStripMenuItem2.Text = "Livre";
-            // 
-            // adhérentToolStripMenuItem2
-            // 
-            this.adhérentToolStripMenuItem2.Name = "adhérentToolStripMenuItem2";
-            this.adhérentToolStripMenuItem2.Size = new System.Drawing.Size(144, 26);
-            this.adhérentToolStripMenuItem2.Text = "Adhérent";
-            // 
-            // jeuToolStripMenuItem1
-            // 
-            this.jeuToolStripMenuItem1.Name = "jeuToolStripMenuItem1";
-            this.jeuToolStripMenuItem1.Size = new System.Drawing.Size(144, 26);
-            this.jeuToolStripMenuItem1.Text = "Jeu";
-            // 
             // statistiquesToolStripMenuItem
             // 
             this.statistiquesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -272,13 +248,74 @@
             this.connexionToolStripMenuItem.Size = new System.Drawing.Size(88, 25);
             this.connexionToolStripMenuItem.Text = "Déconnexion";
             // 
+            // ajouterRetirerToolStripMenuItem
+            // 
+            this.ajouterRetirerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.livreToolStripMenuItem2,
+            this.adhérentToolStripMenuItem2,
+            this.jeuToolStripMenuItem1});
+            this.ajouterRetirerToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.ajouterRetirerToolStripMenuItem.Name = "ajouterRetirerToolStripMenuItem";
+            this.ajouterRetirerToolStripMenuItem.Size = new System.Drawing.Size(69, 25);
+            this.ajouterRetirerToolStripMenuItem.Text = "Retirer";
+            // 
+            // livreToolStripMenuItem2
+            // 
+            this.livreToolStripMenuItem2.Name = "livreToolStripMenuItem2";
+            this.livreToolStripMenuItem2.Size = new System.Drawing.Size(180, 26);
+            this.livreToolStripMenuItem2.Text = "Livre";
+            // 
+            // adhérentToolStripMenuItem2
+            // 
+            this.adhérentToolStripMenuItem2.Name = "adhérentToolStripMenuItem2";
+            this.adhérentToolStripMenuItem2.Size = new System.Drawing.Size(180, 26);
+            this.adhérentToolStripMenuItem2.Text = "Adhérent";
+            // 
+            // jeuToolStripMenuItem1
+            // 
+            this.jeuToolStripMenuItem1.Name = "jeuToolStripMenuItem1";
+            this.jeuToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
+            this.jeuToolStripMenuItem1.Text = "Jeu";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3,
+            this.toolStripMenuItem4});
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(73, 25);
+            this.toolStripMenuItem1.Text = "Ajouter";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 26);
+            this.toolStripMenuItem2.Text = "Livre";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 26);
+            this.toolStripMenuItem3.Text = "Adhérent";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 26);
+            this.toolStripMenuItem4.Text = "Jeu";
+            // 
             // Form_stat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.Title);
             this.Controls.Add(this.menuStrip1);
+            this.MaximumSize = new System.Drawing.Size(1024, 768);
+            this.MinimumSize = new System.Drawing.Size(1024, 768);
             this.Name = "Form_stat";
             this.Text = "Form_stat";
             this.menuStrip1.ResumeLayout(false);
@@ -306,10 +343,6 @@
         private System.Windows.Forms.ToolStripMenuItem adhérentToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem livreToolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem jeuToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem ajouterRetirerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem livreToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem adhérentToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem jeuToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem statistiquesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nombreDemprunteursPasAnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem empruntsParCatégorieToolStripMenuItem;
@@ -317,5 +350,13 @@
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajouterSupprimerUneCatégorieToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem connexionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ajouterRetirerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem livreToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem adhérentToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem jeuToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
     }
 }

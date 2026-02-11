@@ -55,6 +55,13 @@
             this.ajouterSupprimerUneCatégorieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.connexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Title = new System.Windows.Forms.Label();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
+            this.vScrollBar3 = new System.Windows.Forms.VScrollBar();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +72,7 @@
             this.Réservations.ItemHeight = 25;
             this.Réservations.Location = new System.Drawing.Point(676, 181);
             this.Réservations.Name = "Réservations";
-            this.Réservations.Size = new System.Drawing.Size(320, 529);
+            this.Réservations.Size = new System.Drawing.Size(300, 479);
             this.Réservations.TabIndex = 7;
             // 
             // Retours
@@ -73,9 +80,9 @@
             this.Retours.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
             this.Retours.FormattingEnabled = true;
             this.Retours.ItemHeight = 25;
-            this.Retours.Location = new System.Drawing.Point(332, 181);
+            this.Retours.Location = new System.Drawing.Point(348, 181);
             this.Retours.Name = "Retours";
-            this.Retours.Size = new System.Drawing.Size(338, 529);
+            this.Retours.Size = new System.Drawing.Size(300, 479);
             this.Retours.TabIndex = 6;
             // 
             // Retards
@@ -83,9 +90,9 @@
             this.Retards.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
             this.Retards.FormattingEnabled = true;
             this.Retards.ItemHeight = 25;
-            this.Retards.Location = new System.Drawing.Point(12, 181);
+            this.Retards.Location = new System.Drawing.Point(23, 181);
             this.Retards.Name = "Retards";
-            this.Retards.Size = new System.Drawing.Size(314, 529);
+            this.Retards.Size = new System.Drawing.Size(300, 479);
             this.Retards.TabIndex = 5;
             // 
             // menuStrip1
@@ -94,6 +101,7 @@
             this.tableauDeBordToolStripMenuItem,
             this.rechercherToolStripMenuItem,
             this.scannerToolStripMenuItem,
+            this.toolStripMenuItem1,
             this.ajouterRetirerToolStripMenuItem,
             this.statistiquesToolStripMenuItem,
             this.optionsToolStripMenuItem,
@@ -136,25 +144,25 @@
             this.livreToolStripMenuItem4,
             this.jeuToolStripMenuItem2});
             this.adhérentToolStripMenuItem1.Name = "adhérentToolStripMenuItem1";
-            this.adhérentToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
+            this.adhérentToolStripMenuItem1.Size = new System.Drawing.Size(166, 26);
             this.adhérentToolStripMenuItem1.Text = "Smartphone";
             // 
             // livreToolStripMenuItem3
             // 
             this.livreToolStripMenuItem3.Name = "livreToolStripMenuItem3";
-            this.livreToolStripMenuItem3.Size = new System.Drawing.Size(180, 26);
+            this.livreToolStripMenuItem3.Size = new System.Drawing.Size(144, 26);
             this.livreToolStripMenuItem3.Text = "Adhérent";
             // 
             // livreToolStripMenuItem4
             // 
             this.livreToolStripMenuItem4.Name = "livreToolStripMenuItem4";
-            this.livreToolStripMenuItem4.Size = new System.Drawing.Size(180, 26);
+            this.livreToolStripMenuItem4.Size = new System.Drawing.Size(144, 26);
             this.livreToolStripMenuItem4.Text = "Livre";
             // 
             // jeuToolStripMenuItem2
             // 
             this.jeuToolStripMenuItem2.Name = "jeuToolStripMenuItem2";
-            this.jeuToolStripMenuItem2.Size = new System.Drawing.Size(180, 26);
+            this.jeuToolStripMenuItem2.Size = new System.Drawing.Size(144, 26);
             this.jeuToolStripMenuItem2.Text = "Jeu";
             // 
             // livreToolStripMenuItem1
@@ -164,7 +172,7 @@
             this.livreToolStripMenuItem5,
             this.jeuToolStripMenuItem3});
             this.livreToolStripMenuItem1.Name = "livreToolStripMenuItem1";
-            this.livreToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
+            this.livreToolStripMenuItem1.Size = new System.Drawing.Size(166, 26);
             this.livreToolStripMenuItem1.Text = "Scannette";
             // 
             // adhérentToolStripMenuItem3
@@ -193,25 +201,26 @@
             this.jeuToolStripMenuItem1});
             this.ajouterRetirerToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.ajouterRetirerToolStripMenuItem.Name = "ajouterRetirerToolStripMenuItem";
-            this.ajouterRetirerToolStripMenuItem.Size = new System.Drawing.Size(134, 25);
-            this.ajouterRetirerToolStripMenuItem.Text = "Ajouter / Retirer";
+            this.ajouterRetirerToolStripMenuItem.Size = new System.Drawing.Size(69, 25);
+            this.ajouterRetirerToolStripMenuItem.Text = "Retirer";
+            this.ajouterRetirerToolStripMenuItem.Click += new System.EventHandler(this.ajouterRetirerToolStripMenuItem_Click);
             // 
             // livreToolStripMenuItem2
             // 
             this.livreToolStripMenuItem2.Name = "livreToolStripMenuItem2";
-            this.livreToolStripMenuItem2.Size = new System.Drawing.Size(180, 26);
+            this.livreToolStripMenuItem2.Size = new System.Drawing.Size(144, 26);
             this.livreToolStripMenuItem2.Text = "Livre";
             // 
             // adhérentToolStripMenuItem2
             // 
             this.adhérentToolStripMenuItem2.Name = "adhérentToolStripMenuItem2";
-            this.adhérentToolStripMenuItem2.Size = new System.Drawing.Size(180, 26);
+            this.adhérentToolStripMenuItem2.Size = new System.Drawing.Size(144, 26);
             this.adhérentToolStripMenuItem2.Text = "Adhérent";
             // 
             // jeuToolStripMenuItem1
             // 
             this.jeuToolStripMenuItem1.Name = "jeuToolStripMenuItem1";
-            this.jeuToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
+            this.jeuToolStripMenuItem1.Size = new System.Drawing.Size(144, 26);
             this.jeuToolStripMenuItem1.Text = "Jeu";
             // 
             // statistiquesToolStripMenuItem
@@ -228,8 +237,8 @@
             // nombreDemprunteursPasAnToolStripMenuItem
             // 
             this.nombreDemprunteursPasAnToolStripMenuItem.Name = "nombreDemprunteursPasAnToolStripMenuItem";
-            this.nombreDemprunteursPasAnToolStripMenuItem.Size = new System.Drawing.Size(294, 26);
-            this.nombreDemprunteursPasAnToolStripMenuItem.Text = "Nombre d\'emprunteurs pas an";
+            this.nombreDemprunteursPasAnToolStripMenuItem.Size = new System.Drawing.Size(293, 26);
+            this.nombreDemprunteursPasAnToolStripMenuItem.Text = "Nombre d\'emprunteurs par an";
             // 
             // empruntsParCatégorieToolStripMenuItem
             // 
@@ -273,19 +282,73 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Title.AutoSize = true;
             this.Title.Font = new System.Drawing.Font("Impact", 25F);
-            this.Title.Location = new System.Drawing.Point(401, 49);
+            this.Title.Location = new System.Drawing.Point(400, 50);
             this.Title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Title.Name = "Title";
             this.Title.Size = new System.Drawing.Size(191, 42);
             this.Title.TabIndex = 8;
             this.Title.Text = "BiblioFusion";
             // 
-            // Form_Tab_de_Bord
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(305, 181);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(17, 479);
+            this.vScrollBar1.TabIndex = 9;
+            // 
+            // vScrollBar2
+            // 
+            this.vScrollBar2.Location = new System.Drawing.Point(631, 181);
+            this.vScrollBar2.Name = "vScrollBar2";
+            this.vScrollBar2.Size = new System.Drawing.Size(17, 479);
+            this.vScrollBar2.TabIndex = 10;
+            // 
+            // vScrollBar3
+            // 
+            this.vScrollBar3.Location = new System.Drawing.Point(959, 181);
+            this.vScrollBar3.Name = "vScrollBar3";
+            this.vScrollBar3.Size = new System.Drawing.Size(17, 479);
+            this.vScrollBar3.TabIndex = 11;
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3,
+            this.toolStripMenuItem4});
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(73, 25);
+            this.toolStripMenuItem1.Text = "Ajouter";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 26);
+            this.toolStripMenuItem2.Text = "Livre";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 26);
+            this.toolStripMenuItem3.Text = "Adhérent";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 26);
+            this.toolStripMenuItem4.Text = "Jeu";
+            // 
+            // Form_tab_de_bord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.vScrollBar3);
+            this.Controls.Add(this.vScrollBar2);
+            this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.Title);
             this.Controls.Add(this.Réservations);
             this.Controls.Add(this.Retours);
@@ -293,8 +356,9 @@
             this.Controls.Add(this.menuStrip1);
             this.MaximumSize = new System.Drawing.Size(1024, 768);
             this.MinimumSize = new System.Drawing.Size(1024, 768);
-            this.Name = "Form_Tab_de_Bord";
+            this.Name = "Form_tab_de_bord";
             this.Text = "BiblioFusion - tableau de bord";
+            this.Load += new System.EventHandler(this.Form_tab_de_bord_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -331,5 +395,12 @@
         private System.Windows.Forms.ToolStripMenuItem ajouterSupprimerUneCatégorieToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem connexionToolStripMenuItem;
         private System.Windows.Forms.Label Title;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
+        private System.Windows.Forms.VScrollBar vScrollBar2;
+        private System.Windows.Forms.VScrollBar vScrollBar3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
     }
 }
