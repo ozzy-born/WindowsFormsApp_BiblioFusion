@@ -58,12 +58,6 @@
     <Compile Include="Form_connexion.Designer.cs">
       <DependentUpon>Form_connexion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_retirer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_retirer.Designer.cs">
-      <DependentUpon>Form_retirer.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form_stat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,9 +83,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_connexion.resx">
       <DependentUpon>Form_connexion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_retirer.resx">
-      <DependentUpon>Form_retirer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_stat.resx">
       <DependentUpon>Form_stat.cs</DependentUpon>
